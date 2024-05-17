@@ -568,7 +568,9 @@ a {
     align-items: flex-end
 }
 
-
+.vew-more_black p{
+    letter-spacing: 0.05em;
+}
 
 
 /*FOOTER
