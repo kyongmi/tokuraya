@@ -7,7 +7,7 @@ mb_internal_encoding("UTF-8");
 //↑マルチバイトの文字エンコーディングをUTF-8にします
 
 if($_POST) {
-  $to = 'youraddress@example.com';
+  $to = 'kyoko.webdesign@gmail.com';
   //↑このお問い合わせフォームに入力された内容を送る先のメールアドレス。
   //通常は、お問い合わせフォームがあるホームページを管理している人のメールアドレスです。
 
