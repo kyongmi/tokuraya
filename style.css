@@ -761,26 +761,288 @@ iframe{
 }
 
 
+
+/*買取ページ
+--------------------------------------------------------*/
+
+.kaitori_logo_b{
+    width: 15%;
+    height: auto;
+}
+
+.kaitori_service_zone{
+    position: relative;
+}
+
+.kaitori_service{
+    display: flex;
+    align-items: center;
+    margin: 160px 0 100px 0;
+}
+
+.kaitori_service_zone .nagarerutext{
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+}
+
+.kaitori_service_title{
+    margin-bottom: 30px;
+}
+
+.kaitori_service .imgbox{
+    width: 50%;
+    height: 500px;
+}
+
+.kaitori_service img{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.kaitori_service_textbox {
+    margin: 0 8% 0 8% ;
+}
+
+.kaitori_service_textbox .setumei-text{
+    margin-bottom: 30px;
+}
+
+/*--強み--*/
+
+.strength-zone{
+    margin: 100px 8% 100px 8%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.strength-box{
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.strength-box .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.strength-box .title-zone{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.strength-box .number{
+    font-size: 85px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #e6027a, #44eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 20px;
+    line-height: 1em;
+}
+
+.strength-box img{
+    width: 25%;
+    height: auto;
+}
+
+
+/*----出張買取り-----*/
+
+
+
+.kaitori_purchase{
+    display: flex;
+    align-items: center;
+    margin: 120px 0 150px 0;
+}
+
+.kaitori_purchase_title{
+    margin-bottom: 30px;
+}
+
+.kaitori_purchase .imgbox{
+    width: 40%;
+    height: 400px;
+    margin-left: 8%;
+}
+
+.kaitori_purchase img{
+    border-radius: 50px;
+}
+
+.kaitori_purchase_textbox {
+    margin: 0 8% 0 8% ;
+}
+
+.kaitori_purchase_textbox .setumei-text{
+    margin-bottom: 30px;
+}
+
+.kaitori_purchase_textbox img{
+    width: 420px;
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 0px;
+}
+
+.kaitori_purchase2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8% 100px 12%;
+}
+
+
+.kaitori_purchase2 .l-1 img{
+    height: auto;
+    width: 345px;
+    margin-bottom: 30px;
+}
+
+.kaitori_purchase2 .l-2 img{
+    height: auto;
+    width: 345px;
+    margin-bottom: 30px;
+}
+
+.kaitori_purchase2 .l-1{
+    margin-bottom: 100px;
+}
+
+.l-1,.l-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+}
+
+.kaitori_purchase2 .iphon{
+    width: 55%;
+    margin-left: 30px;
+}
+
+
+/*----買取り実績-----*/
+
+.achievements{
+    margin: 100px 20% 100px 20%;
+}
+
+
+/*---買取り・黒背景---*/
+
+
+
+.qa-title .grdtext{
+    margin-bottom: 20px;
+    padding: 100px 8% 0px 8%;
+}
+
+.qa-title .midasi{
+    color: #ffff;
+    padding-left: 8%;
+}
+
+
+/*ベース*/
+.accordion{
+    margin: 50px 8% 0 8%;
+
+}
+.toggle {
+	display: none;
+}
+.Label {		/*タイトル*/
+	padding: 1em;
+	display: block;
+	color: #fff;
+	background:#272727;
+}
+.Label::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 20px;
+	transform: rotate(135deg);
+}
+.Label,
+.content {
+    display: flex;
+    align-items: center;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.accordion .content {		/*本文*/
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+    background-color: #ffff;
+}
+.accordion .content p{
+    color: #151515;
+}
+
+.toggle:checked + .Label + .content {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
+
+.w-b{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+
 /*バズコミページ
 --------------------------------------------------------*/
 
 .logo_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
     position: relative;
     padding: 100px 8% 0px 8%;
 }
 
-.bazukomi_logo_b2{
-    position: absolute;
-    top: 36px;
-    left: 390px;
-    z-index: -1;
-    opacity: 10%;
-    width: 80%;
-    object-fit: contain;
+.p-title{
+    padding-left: 50px;
 }
 
+.p-title .text{
+    font-size: 35px;
+}
+.title-b{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+
+
 .bazukomi_logo_b{
-    width: 50%;
+    width: 35%;
 }
 
 .bazukomi_service_zone{
@@ -1314,6 +1576,21 @@ span.marker2 {
     }
     .sns-box {
         margin-bottom: 30px;
+    }
+
+
+    /*-----------------プライバシーポリシー--------------*/
+
+    .privacypolicy {
+        font-size: 0.8rem;
+    }
+
+    .privacypolicy .title{
+        font-size: 22px;
+    }
+
+    .privacypolicy {
+        margin: 50px 10%;
     }
 
     /*----フッター---------*/
