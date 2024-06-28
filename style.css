@@ -1309,6 +1309,8 @@ span.marker2 {
         position: fixed;
         z-index: 99999;
         bottom: 30px;
+	left: 50%;
+        transform: translateX(-50%);
         width: 300px;
         display: flex;
         flex-direction: column;
